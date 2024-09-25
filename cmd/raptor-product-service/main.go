@@ -16,9 +16,8 @@ func main() {
 	}
 
 	grpcServer := grpc.NewServer()
-	productService := service.NewProductService()
 
-	pb.RegisterProductServiceServer(grpcServer, productService)
+	pb.RegisterProductServiceServer(grpcServer, service.NewProductService())
 
 	log.Println("Product service is running on port 50053...")
 	if err := grpcServer.Serve(lis); err != nil {
