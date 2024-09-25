@@ -4,7 +4,6 @@ go 1.23.0
 
 require (
 	github.com/STO-KubSU/raptor-proto v0.2.4
-	github.com/STO-KubSU/userpb v0.0.0-20240830113351-22573e39f483
 	google.golang.org/grpc v1.67.0
 )
 
